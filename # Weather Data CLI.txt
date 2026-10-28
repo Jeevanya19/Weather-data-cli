@@ -1,0 +1,86 @@
+# Weather Data CLI
+
+## Description
+Weather Data CLI is a simple Python command-line application that retrieves current weather information for a city entered by the user. It uses public weather APIs to fetch and display useful weather details.
+
+## Objective
+To understand API requests, JSON processing, Python functions, and error handling by building a practical weather application.
+
+## Features
+- Accepts a city name from the user.
+- Retrieves the city's geographical coordinates.
+- Fetches current weather information.
+- Displays temperature, feels-like temperature, humidity, wind speed, and precipitation.
+- Handles invalid city names, connection errors, and timeouts.
+- Keeps the program simple and beginner-friendly.
+
+## Technologies Used
+- Python
+- Requests library
+- Open-Meteo Geocoding API
+- Open-Meteo Weather Forecast API
+
+## Requirements
+- Python 3
+- Internet connection
+- Requests library
+
+## Installation
+
+Install the required library using:
+
+```bash
+pip install requests
+```
+
+## How to Run
+
+1. Download or clone this repository.
+2. Open a terminal in the project folder.
+3. Run the following command:
+
+```bash
+python weather.py
+```
+
+4. Enter a city name when prompted.
+
+## Sample Output
+
+```text
+Enter city name: Bengaluru
+
+--- Weather Report ---
+City: Bengaluru
+Temperature: 28.0 °C
+Feels Like: 29.0 °C
+Humidity: 60 %
+Wind Speed: 12.0 km/h
+Precipitation: 0.0 mm
+```
+
+*Note: The sample values are illustrative. Actual weather information changes.*
+
+## Error Handling
+- Displays a message when the city cannot be found.
+- Handles network errors and request timeouts.
+- Handles missing or unexpected API data.
+- Rejects empty city names.
+
+## Learning Outcomes
+- Making HTTP requests using Python.
+- Working with APIs and JSON responses.
+- Using functions and exception handling.
+- Processing user input.
+- Displaying formatted output in the terminal.
+
+## APIs Used
+- Geocoding API: https://geocoding-api.open-meteo.com/
+- Weather API: https://open-meteo.com/
+
+## Future Improvements
+- Display weather conditions using readable descriptions.
+- Add a forecast for upcoming days.
+- Allow users to check multiple cities.
+- Add a graphical user interface.
+
